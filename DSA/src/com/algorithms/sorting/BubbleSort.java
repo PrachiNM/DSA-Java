@@ -10,10 +10,9 @@ public class BubbleSort {
             return;
         boolean flag;
         int temp;
-        int n2 = n;
         for(int j=0; j<n; j++){
             flag = false;
-            for(int i=0; i<n2-1; i++){
+            for(int i=0; i<n-j-1; i++){
                 if(arr[i]>arr[i+1]){
                      temp = arr[i];
                      arr[i] = arr[i+1];
@@ -23,7 +22,6 @@ public class BubbleSort {
             }
             if(!flag)
                 return;
-            n2--;
         }
     }
 
